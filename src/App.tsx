@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
-import Slider from "@mui/material/slider";
+import { Slider } from "@mui/material";
 import "./App.css";
 
 function App() {
