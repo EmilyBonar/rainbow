@@ -3,10 +3,10 @@ import Slider from "@mui/material/slider";
 import "./App.css";
 
 function App() {
-	const [saturation, setSaturation] = useState(50);
+	const [saturation, setSaturation] = useState(60);
 	const [lightness, setLightness] = useState(50);
 	const [hueRange, setHueRange] = useState<[number, number]>([0, 360]);
-	const [steps, setSteps] = useState<number>(5);
+	const [steps, setSteps] = useState<number>(15);
 
 	const hues = useMemo(() => {
 		const arr = new Array(steps);
