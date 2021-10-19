@@ -1,0 +1,22 @@
+.App {
+	height: 100%;
+	overflow: hidden;
+}
+
+main {
+	height: 100%;
+	display: flex;
+}
+
+.Inputs {
+	display: flex;
+	gap: 5%;
+	padding: 16px;
+}
+
+.Inputs > div {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
