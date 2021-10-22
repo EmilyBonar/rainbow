@@ -20,3 +20,27 @@ main {
 	flex-direction: column;
 	align-items: center;
 }
+
+.tooltip {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	visibility: hidden;
+	position: relative;
+	width: 120px;
+	border-radius: 10px;
+	top: 20px;
+}
+.tooltip > * {
+	margin: 8px;
+}
+
+.stripe {
+	flex-grow: 1;
+	display: flex;
+	align-items: center;
+}
+
+.stripe:hover > .tooltip {
+	visibility: visible;
+}
