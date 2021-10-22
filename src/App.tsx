@@ -39,7 +39,7 @@ function App() {
 					<label htmlFor="hue">Hue</label>
 					<Slider
 						id="hue"
-						value={hueRange}
+						defaultValue={[0, 360]}
 						onChange={handleHueChange}
 						min={0}
 						max={360}
@@ -81,9 +81,9 @@ function App() {
 				</div>
 			</div>
 			<main>
-				{hues.map((hue) => (
+				{hues.map((hue, idx) => (
 					<Stripe
-						key={hue}
+						key={idx}
 						hue={hue}
 						saturation={saturation}
 						lightness={lightness}
